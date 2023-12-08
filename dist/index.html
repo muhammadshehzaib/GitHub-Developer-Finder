@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Outfit&family=Sofia+Sans+Semi+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="dark:bg-slate-900 bg-[#F6F8FF]">
+    <div class="landing-page font-Hedvig">
+      <div class="container max-w-3xl mx-auto h-screen mt-24">
+        <div class="flex justify-between mb-6 max-w-[90%] mx-auto">
+          <p class="font-bold text-xl dark:text-white">devfinder</p>
+          <div class="flex items-center">
+            <div class="flex items-center">
+              <div>
+                <p
+                  class="text-[#697C9A] font-bold uppercase mr-5 dark-mode-text"
+                >
+                  Dark
+                </p>
+                <p
+                  class="text-[#697C9A] font-bold uppercase mr-5 light-mode-text"
+                >
+                  Light
+                </p>
+              </div>
+              <img class="moon cursor-pointer" src="./images/moon.svg" />
+              <img class="sun cursor-pointer" src="./images/sun.svg" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <form>
+            <label
+              for="default-search"
+              class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+              >Search</label
+            >
+            <div class="relative w-[90%] mx-auto">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-2">
+                <svg
+                  class="w-4 h-4 text-[#0079FF] dark:text-[#0079FF]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="search"
+                id="default_search"
+                class="block w-full h-full mx-auto p-4 text-xs ps-7 text-gray-900 focus:outline-none rounded-lg bg-[#FEFEFE] focus:border-[#0079FF] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search Github username..."
+                required
+              />
+              <button
+                type="submit"
+                class="text-white absolute end-2 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Search
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="w-full" id="data-container"></div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
